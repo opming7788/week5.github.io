@@ -31,6 +31,7 @@ show tables;
 # Task 3: SQL CRUD
 
 1.INSERT a new row to the member table where name, username and password must be set to test.INSERT additional 4 rows with arbitrary data.
+
 使用 SQL 命令:
 
 ```
