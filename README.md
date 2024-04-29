@@ -8,7 +8,7 @@ USE website;</span>
 ![示例圖片](pic1.JPG)
 
 2.使用 SQL 命令:<br>
-<span style="color:red">
+```
 CREATE TABLE member (<br>
 id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT 'Unique ID',<br>
 name VARCHAR(255) NOT NULL COMMENT 'Name',<br>
@@ -18,7 +18,8 @@ follower_count INT UNSIGNED NOT NULL DEFAULT 0 COMMENT 'Follower Count',<br>
 time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Signup Time'<br>
 );<br>
 DESCRIBE member;<br>
-show tables;</span>
+```
+show tables;
 ![示例圖片](pic2.JPG)
 
 # Task 3: SQL CRUD <br>
