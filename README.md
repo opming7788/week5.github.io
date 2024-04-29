@@ -2,8 +2,10 @@
 # Task 2: Create a new database named website.
 
 1.使用 SQL 命令創建新的 DATABASE website:<br>
-<span style="color:red">CREATE DATABASE website;<br>
-USE website;</span>
+```
+CREATE DATABASE website;
+USE website;
+```
 ![示例圖片](pic1.JPG)
 
 2.使用 SQL 命令:<br>
