@@ -1,5 +1,4 @@
-# Task 1: Install MySQL server <br>
-
+# Task 1: Install MySQL server 
 # Task 2: Create a new database named website.
 
 1.使用 SQL 命令創建新的 DATABASE website:<br>
