@@ -50,6 +50,7 @@ VALUES
 ```
 
 ![示例圖片](PIC/pic3.JPG)
+
 2.SELECT all rows from the member table
 使用 SQL 命令:
 
@@ -67,7 +68,9 @@ SELECT * FROM website.member ORDER BY time DESC;
 ```
 
 ![示例圖片](PIC/pic5.JPG)
+
 4.SELECT total 3 rows, second to fourth, from the member table, in descending order of time. Note: it does not mean SELECT rows where id are 2, 3, or 4
+
 使用 SQL 命令:
 
 ```
@@ -75,6 +78,7 @@ SELECT * FROM member ORDER BY time DESC LIMIT 2,3;
 ```
 
 ![示例圖片](PIC/pic6.JPG)
+
 5.SELECT rows where username equals to test.
 使用 SQL 命令:
 
@@ -83,6 +87,7 @@ SELECT * FROM member WHERE username = 'test';
 ```
 
 ![示例圖片](PIC/pic7.JPG)
+
 6.SELECT rows where name includes the es keyword
 使用 SQL 命令:
 
@@ -91,6 +96,7 @@ SELECT * FROM member WHERE name LIKE '%es%';
 ```
 
 ![示例圖片](PIC/pic8.JPG)
+
 7.SELECT rows where both username and password equal to test.
 使用 SQL 命令:
 
@@ -99,6 +105,7 @@ SELECT * FROM member WHERE username = 'test' AND password = 'test';
 ```
 
 ![示例圖片](PIC/pic9.JPG)
+
 8.UPDATE data in name column to test2 where username equals to test.
 使用 SQL 命令:
 
@@ -118,6 +125,7 @@ SELECT COUNT(*) AS total_rows FROM member;
 ```
 
 ![示例圖片](PIC/pic11.JPG)
+
 2.SELECT the sum of follower_count of all the rows from the member table.
 使用 SQL 命令:
 
@@ -126,6 +134,7 @@ SELECT SUM(follower_count) AS total_follower_count FROM member;
 ```
 
 ![示例圖片](PIC/pic12.JPG)
+
 3.SELECT the average of follower_count of all the rows from the member table.<br>
 使用 SQL 命令:
 
@@ -134,6 +143,7 @@ SELECT AVG(follower_count) AS average_follower_count FROM member;
 ```
 
 ![示例圖片](PIC/pic13.JPG)
+
 4.SELECT the average of follower_count of the first 2 rows, in descending order of follower_count, from the member table.
 使用 SQL 命令:
 
@@ -176,6 +186,7 @@ SELECT message.id, message.content, message.like_count, message.time, member.nam
 ```
 
 ![示例圖片](PIC/pic15.JPG)
+
 3.SELECT all messages, including sender names, where sender username equals to test. We have to JOIN the member table to filter and get that.
 使用 SQL 命令:
 
@@ -184,6 +195,7 @@ SELECT message.id, message.content, message.like_count, message.time,member.name
 ```
 
 ![示例圖片](PIC/pic16.JPG)
+
 4.Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like
 count of messages where sender username equals to test
 使用 SQL 命令:
@@ -193,6 +205,7 @@ SELECT AVG(message.like_count) AS avg_like_count FROM message JOIN member ON mes
 ```
 
 ![示例圖片](PIC/pic17.JPG)
+
 5.Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like count of messages GROUP BY sender username
 使用 SQL 命令:
 
