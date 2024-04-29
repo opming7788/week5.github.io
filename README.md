@@ -230,3 +230,11 @@ SELECT member.username, AVG(message.like_count) AS avg_like_count FROM message J
 ```
 
 ![示例圖片](PIC/pic18.JPG)
+
+# Use mysqldump
+
+```
+mysqldump -u root -p website > data.sql
+```
+
+![示例圖片](PIC/pic19.JPG)
