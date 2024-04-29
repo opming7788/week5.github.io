@@ -11,7 +11,9 @@ USE website;
 
 ![示例圖片](PIC/pic1.JPG)
 
-2.使用 SQL 命令:
+2.設定 DATABASE website 的資料庫規格
+
+使用 SQL 命令:
 
 ```
 CREATE TABLE member (
@@ -32,7 +34,7 @@ show tables;
 
 1.INSERT a new row to the member table where name, username and password must be set to test.INSERT additional 4 rows with arbitrary data.
 
-使用 SQL 命令:
+使用 SQL 命令創建 name, username, password 都是'test'的資料:
 
 ```
 INSERT INTO member (name, username, password) VALUES ('test', 'test', 'test');
@@ -53,7 +55,7 @@ VALUES
 
 2.SELECT all rows from the member table
 
-使用 SQL 命令:
+使用 SQL 命令顯示 member table:
 
 ```
 SELECT * FROM website.member;
@@ -63,7 +65,7 @@ SELECT * FROM website.member;
 
 3.SELECT all rows from the member table, in descending order of time
 
-使用 SQL 命令:
+使用 SQL 命令顯示 member table 並且根據時間遞減來排序:
 
 ```
 SELECT * FROM website.member ORDER BY time DESC;
@@ -76,7 +78,7 @@ SELECT * FROM website.member ORDER BY time DESC;
 使用 SQL 命令:
 
 ```
-SELECT * FROM member ORDER BY time DESC LIMIT 2,3;
+SELECT * FROM website.member ORDER BY time DESC LIMIT 2,3;
 ```
 
 ![示例圖片](PIC/pic6.JPG)
@@ -177,7 +179,7 @@ FROM (
 ```
 CREATE TABLE message (
     id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT 'Unique ID',
-    member_id BIGINT NOT NULL,
+    member_id BIGINT NOT NULL COMMENT 'Member ID for Message Sender',
     content VARCHAR(255) NOT NULL COMMENT 'Content',
     like_count INT UNSIGNED NOT NULL DEFAULT 0 COMMENT 'Like Count',
     time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Publish Time',
