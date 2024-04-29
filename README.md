@@ -5,7 +5,7 @@
 1.使用 SQL 命令創建新的 DATABASE 名稱為 website:
 `CREATE DATABASE website;`
 USE website;</span>
-![示例圖片](pic/pic1.JPG)
+![示例圖片](PIC/pic1.JPG)
 
 2.使用 SQL 命令:
 
