@@ -9,15 +9,15 @@ USE website;</span>
 
 2.使用 SQL 命令:<br>
 ```
-CREATE TABLE member (<br>
-id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT 'Unique ID',<br>
-name VARCHAR(255) NOT NULL COMMENT 'Name',<br>
-username VARCHAR(255) NOT NULL COMMENT 'Username',<br>
-password VARCHAR(255) NOT NULL COMMENT 'Password',<br>
-follower_count INT UNSIGNED NOT NULL DEFAULT 0 COMMENT 'Follower Count',<br>
-time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Signup Time'<br>
-);<br>
-DESCRIBE member;<br>
+CREATE TABLE member (
+id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT 'Unique ID',
+name VARCHAR(255) NOT NULL COMMENT 'Name',
+username VARCHAR(255) NOT NULL COMMENT 'Username',
+password VARCHAR(255) NOT NULL COMMENT 'Password',
+follower_count INT UNSIGNED NOT NULL DEFAULT 0 COMMENT 'Follower Count',
+time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Signup Time'
+);
+DESCRIBE member;
 ```
 show tables;
 ![示例圖片](pic2.JPG)
