@@ -78,7 +78,10 @@ SELECT * FROM website.member ORDER BY time DESC;
 使用 SQL 命令:
 
 ```
-SELECT * FROM website.member ORDER BY time DESC LIMIT 2,3;
+SELECT * FROM (
+    SELECT * FROM website.member ORDER BY time DESC
+) AS sorted
+LIMIT 1, 3;
 ```
 
 ![示例圖片](PIC/pic6.JPG)
